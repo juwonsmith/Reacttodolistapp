@@ -1,0 +1,66 @@
+
+/* .holder{
+  
+} */
+/* .top .Todo_holder .homeerror{
+    color: rgba(255, 51, 0, 0.425);
+}
+.Todo_holder{
+    border: 2px solid #003600;
+    border-radius: 20px;
+    background-color: #1A2228;
+    margin-top: 30px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 560px;
+    min-height: 500px;
+    max-height: max-content;
+    word-wrap: none;
+} */
+.top{
+    height: max-content;
+    /* border: 3px solid #003600;  */
+    /* background-image: linear-gradient(to bottom, rgba(30, 0, 139, 0.534),rgba(255, 196, 0, 0.644)); */
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    color: #ffff;
+}
+.top .Todo_holder .homeerror{
+    color: rgba(255, 51, 0, 0.425);
+}
+.Todo_holder{
+    border: 2px solid #003600;
+    border-radius: 20px;
+    box-shadow: 5px 4px 3px 2px black;
+    background-color: #1A2228;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 508px;
+    /* to set the box to be reponsive */
+    min-height: max-content;
+    /*  */
+    max-height: max-content;
+    word-wrap: none;
+} 
+
+
+@media only screen and (min-width: 900px){
+    .top{
+        width: 700px;
+    }
+}
+
+
+@media only screen and (max-width: 408px){
+    .top{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 300px){
+    .top{
+        width: 200px;
+    }
+}

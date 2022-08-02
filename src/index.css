@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@700&display=swap');
+/* variables */
+:root {
+  --heading-color: #444;
+  --text-color: #999;
+  --primary-color: #388C92;
+  --highlight-color: #d13267;
+  --bg-color: #fcfff8;
+}
+
+/* base styles */
+body {
+  font-family: 'Edu QLD Beginner', cursive;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow-x: hidden;
+  min-width: 100%;
+  max-width: 100%;
+  height: 180vh;
+  font-size: 1.5em;
+  background: var(--bg-color);
+  background-image:linear-gradient(to bottom right, rgb(30, 0, 139), rgba(255, 196, 0, 0.842)); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* body::-webkit-scrollbar{
+  display: none;
+} */
+ul, li, p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+.btn {
+  background: #f4f4f4;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 1em;
+  margin-bottom: 10px;
+  border: 1px solid var(--primary-color);
+}
+.btn:hover{
+  background: var(--primary-color);
+  color: #f4f4f4;
+  box-shadow: 13px 6px 50px -14px rgba(0,0,0,0.52);
+  -webkit-box-shadow: 13px 6px 50px -14px rgba(0,0,0,0.52);
+  -moz-box-shadow: 13px 6px 50px -14px rgba(0,0,0,0.52);
+}
+
+/* layout */
+/* .page-title {
+  font-size: 1em;
+  color: var(--heading-color);
+  display: inline-block;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+/* forms */
+/* label {
+  display: block;
+  margin: 24px auto;
+}
+label span {
+  display: block;
+  margin-bottom: 6px;
+} */
+/* input, textarea {
+  padding: 8px 6px;
+  font-size: 1em;
+  color: #777;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+textarea {
+  min-height: 160px;
+}
+.error {
+  color: red;
+  background: pink;
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 10px 0;
+}  */

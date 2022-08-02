@@ -1,0 +1,71 @@
+/* background: linear-gradient(to right, #79D2AA, #326979) ; */
+/* text-shadow: 8px 4px 9px rgba(0,0,0,0.63); */
+.navbar{
+    background:linear-gradient(to top, #79D2AA, #326979);
+    height: 70px;
+    width: 100%;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+.navbar ul .flex_test{
+    display: flex;
+}
+.navbar ul a{
+    list-style: none;
+    text-decoration: none;  
+    color: #fff; 
+}
+.navbar ul a:hover{
+    color: aqua;
+}
+.navbar ul li{
+    margin-left: 0px;
+    margin-right: 10px;
+    padding: 5px;
+    
+}
+.navbar ul li:hover{
+    text-shadow: 8px 4px 9px rgba(0,0,0,0.63);
+}
+.navbar .Typewriter{
+    display: inline;
+    word-break: keep-all;
+}
+.navbar ul .title{
+    display: block;
+    max-width: 40px;
+    white-space: nowrap;
+    /* margin-right: auto; */
+    margin-left: 0;
+}
+.navbar ul .logout:hover{
+    color: rgba(255, 0, 0, 0.767);
+}
+
+
+@media only screen and (min-width: 900px){
+    .navbar ul .title{
+        margin-left: 50px;
+        max-width: 150px;
+    }
+    .navbar ul li{
+        margin-right: 50px;
+    }
+} 
+@media only screen and (max-width: 380px){
+    .navbar ul .title{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 280px){
+    .navbar ul .title{
+        font-size: 15px;
+        white-space: nowrap;
+        max-width: 40%;
+    }
+}

@@ -1,0 +1,84 @@
+
+.form{
+    text-align: center;
+    position: relative;
+    top: 100px;
+    /* bottom: 100px; */
+    height: 160vh;
+}
+
+.form .semiholder{
+    background-color: #1A2228;
+    border: 10px solid #1A2228;
+    border-radius: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 6px 8px 5px 
+}
+
+.form ul {
+    position: relative;
+}
+.form img {
+    width: 60px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.form .title{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: rgba(255, 196, 0, 0.842);
+}
+ 
+.form label{
+    display: flex;
+    margin-bottom: 70px;
+    color: rgba(255, 196, 0, 0.842);
+    position: relative;
+}
+
+.form label input{
+    position: absolute;
+    top: 1px;
+    left: 110px;
+    min-height: 30px;
+    font-size: 16px;
+    width: 150px;
+    /* font-size: .8rem; */
+
+}
+
+.form .semiholder .err{
+    color: rgba(255, 51, 0, 0.425);
+}
+
+
+
+@media only screen and (min-width: 722px){
+    .form .semiholder{
+        width: 500px;
+    }
+    .form label{
+        margin-left: 60px;
+    }
+    .form label input{
+        width: 300px;
+    }
+
+}  
+@media only screen and (max-width: 280px){
+    .form .semiholder{
+        width: 200px;
+    }
+    .form label{
+        display: block;
+    }
+    .form label input{
+        width: 100px;
+        left: 50px;
+        top: 40px;
+    }
+}

@@ -1,0 +1,93 @@
+
+.Signupform{
+    text-align: center;
+    position: relative;
+    top: 100px;
+    bottom: 100px;
+    height: 160vh;
+}
+.Signupform .signupform_holder{
+    background-color: #1A2228;
+    border: 10px solid #1A2228;
+    border-radius: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 6px 8px 5px 
+}
+
+.Signupform label{
+    display: flex;
+    margin-bottom: 70px;
+    color: rgba(255, 196, 0, 0.842);
+    position: relative;
+}
+.Signupform h2{
+    color: rgba(255, 196, 0, 0.842);
+
+}
+
+.Signupform label span{
+    margin-top: 20px;
+}
+
+.Signupform label input{
+    position: absolute;
+    top: 20px;
+    left: 110px;
+    min-height: 30px;
+    font-size: 16px;
+    width: 150px;
+}
+
+
+.Signupform ul{
+    position: relative;
+}
+
+.Signupform img{
+    width: 60px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 10px;
+}
+.Signupform .errmessage{
+    color:  rgba(255, 51, 0, 0.425);
+    font-size: medium;
+}
+
+
+@media only screen and (min-width: 722px){
+    .Signupform .signupform_holder{
+        width: 500px;
+    }
+    .Signupform label{
+        margin-left: 60px;
+    }
+    .Signupform label input{
+        width: 300px;
+    }
+
+}  
+@media only screen and (max-width: 280px){
+    .Signupform{
+        top: 50px;
+    }
+    .Signupform .signupform_holder{
+        width: 200px;
+    }
+    .Signupform label{
+        display: block;
+    }
+    .Signupform label input{
+        width: 150px;
+        left: 30px;
+        top: 40px;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    .Signupform{
+        top: 60px
+    }
+}

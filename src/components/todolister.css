@@ -1,0 +1,234 @@
+/* .lister{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 520px; */
+    /* max-height: 500px; */
+
+/* }
+.lister .value{
+    margin-top: 20px;
+}
+.lister .item{
+    background: linear-gradient(to right, #79D2AA, #326979) ;
+    max-height: max-content;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: all .3s;
+    position: relative;
+} */
+/* .lister .item span{ */
+    /* margin-right: 2px; */
+    /* max-width: 180px;
+    max-height: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    word-wrap: break-word; */
+    /* color: black; */
+
+/* } */
+/* .lister .item  .checked{ */
+    /* margin-right: 2px; */
+    /* max-width: 180px;
+    max-height: max-content;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: blanchedalmond; */
+    /* color: black; */
+    /* text-decoration: line-through;
+    text-decoration-color: red; */
+/* } */
+/* .lister .item .checkcircle{ */
+/* margin-right: 40px; */
+/* position: absolute;
+right: 55px;
+width: 40px;
+}
+.lister .item .checkcircle:hover{
+    cursor: pointer;
+    filter: invert(80%);
+    box-shadow: 2px 2px 2px ;
+}
+
+.lister .item .delete{
+width: 40px;
+margin-right: 5px;
+}
+.lister .item .delete:hover{
+    cursor: pointer;
+    filter: invert(80%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+    box-shadow: 2px 2px 2px ;
+} */
+
+
+
+.lister{
+    /* border: 2px solid #326979; */
+    width: 350px;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.lister .value{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.lister .value .item{
+    background: linear-gradient(to right, #79D2AA, #326979) ;
+    height: max-content;
+    max-height: max-content;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.lister .value .item span{
+    margin-right: 2px; 
+    margin-top: 5px;
+    margin-left: 5px;
+    max-width: 180px;
+    max-height: 300px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    /* white-space: nowrap; */
+}
+
+.lister .item .checkcircle{ 
+    margin-right: 40px; 
+    position: absolute;
+    right: 15px;
+    width: 40px;
+}
+.lister .item .checkcircle:hover{
+    cursor: pointer;
+    filter: invert(80%);
+    box-shadow: 2px 2px 2px ;
+}
+    
+.lister .item .delete{
+    width: 40px;
+    margin-right: 5px;
+}
+.lister .item .delete:hover{
+    cursor: pointer;
+    filter: invert(80%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+    box-shadow: 2px 2px 2px ;
+} 
+
+.lister .item  .checked{ 
+    margin-right: 2px;
+    max-width: 180px; 
+    max-height: max-content;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: blanchedalmond; 
+    text-decoration: line-through;
+    text-decoration-color: red;
+} 
+.pagination {
+    list-style: none;
+    margin-top: 30px;
+    width: 400px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    gap: 5px;
+    margin-left: -20px;
+
+}
+/* come back later */
+.pagination .page-num{
+    padding: 8px 10px;
+    cursor: pointer;
+    color: orange;
+    border-radius: 5px;
+    font-weight: 400;
+    width: 8px;
+    height: 8px;
+    max-width: 8px;
+    max-height: 8px;
+    padding: 3px 8px 5px 8px;
+    background-color: #326979;
+}
+.pagination .page-num:hover{
+    filter: invert(40%)
+}
+.pagination .active{
+    background-color: #79D2AA;
+}
+
+@media only screen and (min-width: 900px){
+    .lister{
+        border: none;
+        width: 500px;
+        margin-bottom: 10px;
+    }
+    .pagination{
+        margin-left: 40px;
+    }
+}
+@media only screen and (max-width: 408px){
+    .lister{
+        width: 270px;
+    }
+    .lister .value .item span{
+        font-size: 20px;
+        margin-left: 2px;
+        max-width: 100px;
+        max-height: 300px;
+    }
+    .lister .item .checkcircle{
+        width: 30px;
+        margin-right: 0;
+        right: 35px;
+    }
+    .lister .item .delete{
+        width: 30px;
+    }
+
+    .pagination{
+        margin-left: -50px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .lister{
+        width: 180px;
+    }
+    .pagination{
+        margin-left: -110px;
+    }
+    .lister .value .item{
+        width: 180px;
+    }
+    .lister .value .item span{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .lister .item .checkcircle{
+        right: 30px;
+        width: 30px;
+        /* margin-right: 10px;  */
+    }
+    .lister .item .delete{
+        width: 30px;
+    }
+    .lister .value{
+        margin-left: 0px;
+    }
+}

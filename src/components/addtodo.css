@@ -1,0 +1,118 @@
+/* .addtodo{
+    margin-top: 30px;
+    margin-left: 130px;
+}
+.addtodo input{
+    width: 500px;
+    height: 35px;
+    font-size: 25px;
+}
+
+.imageholder{
+    margin-left: 30px;
+    margin-top: 10px;
+    display: flex;
+    height: 60px;
+}
+.imageholder img:hover{
+    box-shadow: 0 0.5px 4px ;
+    cursor: pointer;
+    filter: blur(1px);
+}
+span{
+    margin-left: 6px;
+    margin-top: 20px;
+}
+.imageholder span:hover{
+    color: blanchedalmond;
+}
+.error{
+    color: rgba(255, 0, 0, 0.856);
+    font-size: 20px;
+    margin-left: 30px;
+    text-shadow: 1px 1px 1px;
+} */
+
+
+
+.addtodo{
+    /* margin-left: 50px; */
+    margin-top: 30px;
+    text-align: center;
+}
+.addtodo input{
+    width: 270px;
+    height: 28px;
+    font-size: 16px;
+}
+.addtodo .imagetest{
+    position: relative;
+}
+.addtodo .imageholder img{
+   position: absolute;
+   right: -10px;
+   bottom: 35px;
+    
+}
+.imageholder img:hover{
+    box-shadow: 0 0.5px 4px ;
+    cursor: pointer;
+    filter: blur(1px);
+}
+.addtodo .imageholder span{
+    display: block;
+    margin-top: 10px;
+}
+.imageholder span:hover{
+    color: blanchedalmond;
+}
+.error{
+    color: rgba(255, 0, 0, 0.856);
+    font-size: 20px;
+    margin-left: 30px;
+    text-shadow: 1px 1px 1px;
+    transform: translateX(80px) translateY(-80px);
+    position: relative;
+    bottom: 25px;
+    right: 80px;
+    /* transform: translateY(50px); */
+}
+
+
+
+@media only screen and (min-width: 900px){
+    .addtodo input{
+        width: 400px;
+    }
+    .addtodo .imageholder img{
+        display: block;
+        right: 0;
+        top:-5px;
+        right:80px;
+    } 
+}
+
+
+
+@media only screen and (max-width: 408px){
+    .addtodo input{
+        width: 200px;
+    }
+ 
+}
+
+@media only screen and (max-width: 280px){
+    .error{
+        bottom: 55px;
+    }
+}
+
+
+@media only screen and (max-width: 300px) {
+    .addtodo .imageholder img{
+        width: 25px;
+        top:10px;
+        right:-35px;
+    }
+}
+    
